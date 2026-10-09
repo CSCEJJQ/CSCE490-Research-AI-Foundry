@@ -1,13 +1,12 @@
 import os
 from dotenv import load_dotenv
-from openai import AzureOpenAI
+from openai import OpenAI
 
 load_dotenv()
 
-client = AzureOpenAI(
-    azure_endpoint=os.environ["AZURE_OPENAI_ENDPOINT"],
+client = OpenAI(
+    base_url=os.environ["AZURE_OPENAI_BASE_URL"],
     api_key=os.environ["AZURE_OPENAI_API_KEY"],
-    api_version="2024-10-21",
 )
 
 review = input("Paste a review: ")
