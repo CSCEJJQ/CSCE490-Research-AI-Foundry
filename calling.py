@@ -9,7 +9,7 @@ client = OpenAI(
     api_key=os.environ["AZURE_OPENAI_API_KEY"],
 )
 
-review = input("Paste a review: ")
+review = input("Leave a review: ")
 
 response = client.chat.completions.create(
     model=os.environ["AZURE_OPENAI_DEPLOYMENT"],
