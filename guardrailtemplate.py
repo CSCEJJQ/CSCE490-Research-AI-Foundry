@@ -18,12 +18,17 @@ class ReviewAnalysis(BaseModel):
     escalate: bool
     reply: str
 
+INSTRUCTIONS = ("You analyze product reviews for a retailer. "
+                "Set escalate to true only if the customer reports a defect, safety issue, "
+                "or asks for a refund. "
+                "Keep reply to one friendly sentence addressed to the customer.")
 
 review = input("Paste a review: ")
 
 response = client.responses.parse(
     model=os.environ["AZURE_OPENAI_DEPLOYMENT"],
     input=review,
+    instructions=INSTRUCTIONS,
     text_format=ReviewAnalysis,
 )
 
