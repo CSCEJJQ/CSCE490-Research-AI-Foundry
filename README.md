@@ -1,6 +1,6 @@
 # CSCE490-Research-AI-Foundry
 
-A small app that sends a product review to a model deployed in Azure AI Foundry and returns structures JSON: sentiment, topic, and escalation with a short reply.
+A small applet that sends a product review to a model deployed in Azure AI Foundry and returns structures JSON: sentiment, topic, and escalation with a short reply.
 
 
 ## Setup
