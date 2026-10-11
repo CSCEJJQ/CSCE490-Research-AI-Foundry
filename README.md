@@ -10,6 +10,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 Copy .env.example to the .env file and fill in the Foundry endpoint, key, and the deployment name.
+You need to deploy a model in AI foundry and grab the information from there for this to work
 
 ## Run
 ```
