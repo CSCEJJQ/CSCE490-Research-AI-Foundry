@@ -5,6 +5,8 @@ A small applet that sends a product review to a model deployed in Azure AI Found
 
 ## Setup
 ```
+Clone the Repository first
+
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
